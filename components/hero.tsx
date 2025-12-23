@@ -9,6 +9,7 @@ export default function Hero() {
 
   const heroImages = [
     "/professional-printing-press-machinery-digital-sign.jpg",
+    "/amco.jpg",
     "/professional-printing-equipment-digital-press.jpg",
     "/large-format-printing-signage-production.jpg",
     "/dtf-heat-press-apparel-printing-technology.jpg",
