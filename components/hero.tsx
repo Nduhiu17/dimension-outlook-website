@@ -54,12 +54,11 @@ export default function Hero() {
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 lg:mb-8 leading-tight text-balance tracking-tight">
-            Transform Your Vision <br className="hidden sm:block" />
-            Into Reality
+            Premium Printing & Signage <br className="hidden sm:block" />
+            Solutions for Your Brand
           </h1>
           <p className="text-base sm:text-lg lg:text-xl text-slate-200 mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto text-balance leading-relaxed">
-            Premium printing, signage, and specialized printing services with cutting-edge technology and expert
-            craftsmanship.
+            Industry-leading digital printing, large format signage, DTF apparel branding, and advanced laser/fiber cutting services. Transform your ideas into stunning visual products with cutting-edge technology and expert craftsmanship.
           </p>
           
           {/* CTA Buttons */}

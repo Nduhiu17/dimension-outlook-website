@@ -43,10 +43,14 @@ export default function ContactForm() {
   return (
     <section id="contact" className="py-16 sm:py-24 lg:py-32 bg-background">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-fadeInUp">
+          {/* Accent Line */}
+          <div className="flex justify-center mb-4 sm:mb-6">
+            <div className="h-1 w-16 sm:w-20 bg-gradient-to-r from-primary via-secondary to-accent rounded-full"></div>
+          </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">Get in Touch</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind? Contact us today and let's discuss how we can help.
+            Ready to bring your vision to life? Contact us today to discuss your printing, signage, apparel branding, or laser cutting project. Our team is here to help!
           </p>
         </div>
 

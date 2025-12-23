@@ -13,10 +13,10 @@ export default function CTA() {
 
         <div className="relative animate-fadeInUp">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 animate-slideInDown">
-            Ready to Bring Your Vision to Life?
+            Transform Your Ideas Into Professional Results
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-slideInUp" style={{ animationDelay: '100ms' }}>
-            Let's discuss your project and create something amazing together. Contact us today for a free consultation.
+            Whether you need vibrant signage, custom apparel, precision cutting, or professional printing, our team is ready to deliver exceptional quality. Let's bring your vision to life with cutting-edge technology and expert craftsmanship.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-zoomIn" style={{ animationDelay: '200ms' }}>
             <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-primary-foreground py-6 px-8 text-base font-semibold transition-all duration-300 hover:shadow-2xl hover:shadow-primary/50 group">

@@ -46,18 +46,13 @@ export default function About() {
           <div className="animate-slideInLeft order-2 lg:order-1">
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground mb-4 sm:mb-6">Our Story</h3>
             <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4 leading-relaxed">
-              Founded over 15 years ago, Dimension Outlook Ltd has been at the forefront of printing and signage
-              solutions in East Africa. What started as a small print shop has evolved into a comprehensive service
-              provider offering cutting-edge printing technologies and custom signage solutions.
+              Dimension Outlook Ltd is a leading provider of premium printing and signage solutions across East Africa. With over 15 years of industry expertise, we've established ourselves as the trusted partner for businesses seeking exceptional printing quality, innovative designs, and reliable service.
             </p>
             <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4 leading-relaxed">
-              We pride ourselves on delivering exceptional quality, innovative designs, and unmatched customer service.
-              Our team of experienced professionals is committed to bringing your vision to life with precision,
-              creativity, and attention to detail.
+              Our state-of-the-art facility houses cutting-edge equipment including digital printers, large format systems, DTF heat press technology, and precision laser/fiber cutting machines. This comprehensive capabilities allow us to deliver versatile solutions for signage, promotional materials, apparel branding, and custom design work.
             </p>
             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-              With state-of-the-art equipment and a passion for excellence, we continue to set industry standards and
-              exceed customer expectations on every project.
+              We're committed to combining technical excellence with creative innovation. Every project reflects our dedication to quality, attention to detail, and customer satisfaction. Whether you need eye-catching large format signage, custom apparel, or precision-cut designs, Dimension Outlook delivers results that exceed expectations.
             </p>
           </div>
 
@@ -98,8 +93,7 @@ export default function About() {
             </CardHeader>
             <CardContent>
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                To provide innovative, high-quality printing and signage solutions that empower businesses to
-                communicate their brand message effectively and leave a lasting impression on their audience.
+                To deliver exceptional printing and signage solutions using advanced technology and creative expertise. We empower businesses to communicate their brand message with stunning visual impact, while maintaining the highest standards of quality, reliability, and customer satisfaction.
               </p>
             </CardContent>
           </Card>
@@ -112,8 +106,7 @@ export default function About() {
             </CardHeader>
             <CardContent>
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                To be the leading printing and signage company in Africa, recognized for innovation, quality excellence,
-                and customer satisfaction, setting industry benchmarks for sustainable growth and excellence.
+                To be East Africa's premier printing and signage partner, recognized for innovation, quality excellence, and transformative solutions that elevate brands and drive business success across all industries.
               </p>
             </CardContent>
           </Card>

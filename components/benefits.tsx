@@ -2,28 +2,28 @@ import { CheckCircle2 } from "lucide-react"
 
 const benefits = [
   {
-    title: "Expert Craftsmanship",
-    description: "Our team brings years of experience in printing and signage production.",
+    title: "Expert Technical Knowledge",
+    description: "Specialized expertise in digital printing, large format, DTF apparel, and laser/fiber technology.",
   },
   {
-    title: "Cutting-Edge Technology",
-    description: "State-of-the-art equipment ensures the highest quality outputs.",
+    title: "State-of-the-Art Equipment",
+    description: "Advanced machinery for exceptional quality across all service offerings.",
   },
   {
-    title: "Fast Turnaround",
-    description: "Quick delivery times without compromising on quality.",
+    title: "Fast Turnaround Times",
+    description: "Quick delivery without compromising quality or precision.",
   },
   {
     title: "Custom Solutions",
-    description: "Tailored services to meet your unique business requirements.",
+    description: "Tailored services for unique requirements across all industries.",
   },
   {
     title: "Competitive Pricing",
-    description: "Great value for premium quality printing and signage services.",
+    description: "Premium quality at affordable rates with no hidden costs.",
   },
   {
-    title: "24/7 Support",
-    description: "Dedicated customer support for your peace of mind.",
+    title: "Dedicated Support",
+    description: "Professional guidance from initial consultation through project completion.",
   },
 ]
 
