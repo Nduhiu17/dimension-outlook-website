@@ -1,15 +1,12 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const heroImages = [
     "/professional-printing-press-machinery-digital-sign.jpg",
-    "/amco.jpg",
     "/professional-printing-equipment-digital-press.jpg",
     "/large-format-printing-signage-production.jpg",
     "/dtf-heat-press-apparel-printing-technology.jpg",
@@ -19,13 +16,13 @@ export default function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % heroImages.length)
-    }, 5000) // Change image every 5 seconds
+    }, 6000)
     return () => clearInterval(interval)
   }, [heroImages.length])
 
   return (
-    <section className="relative w-full min-h-screen overflow-hidden">
-      {/* Background Image Carousel with Smooth Transitions */}
+    <section className="relative w-full h-screen overflow-hidden">
+      {/* Background Image Carousel */}
       <div className="absolute inset-0 z-0">
         {heroImages.map((image, index) => (
           <div
@@ -41,48 +38,63 @@ export default function Hero() {
             />
           </div>
         ))}
-        {/* Modern Gradient Overlay with Subtle Animation */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/75 via-blue-900/60 to-slate-900/75"></div>
+        
+        {/* Sophisticated Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60"></div>
+        
+        {/* Radial Gradient Accent */}
+        <div className="absolute inset-0 bg-radial-gradient opacity-20"></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 min-h-screen flex items-center justify-center py-12 sm:py-16 lg:py-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
-          {/* Accent Line */}
-          <div className="flex justify-center mb-6 sm:mb-8">
-            <div className="h-1 w-16 sm:w-20 bg-gradient-to-r from-primary via-secondary to-accent rounded-full"></div>
+      <div className="relative z-10 h-full flex items-center justify-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
+          {/* Animated Main Content */}
+          <div className="space-y-6 sm:space-y-8 animate-fadeInUp">
+            {/* Subtitle Badge */}
+            <div className="inline-flex items-center justify-center">
+              <div className="px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:border-white/40 transition-all duration-300">
+                <span className="text-sm sm:text-base font-semibold text-white/90">✨ Premium Printing Solutions</span>
+              </div>
+            </div>
+
+            {/* Main Heading */}
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight text-balance tracking-tight">
+              Bring Your Vision to Life
+            </h1>
+
+            {/* Decorative Line */}
+            <div className="flex justify-center">
+              <div className="h-1 w-24 sm:w-32 bg-gradient-to-r from-primary via-secondary to-accent rounded-full"></div>
+            </div>
+
+            {/* Scroll Indicator */}
+            <div className="pt-8">
+              <div className="flex justify-center animate-bounce-gentle">
+                <div className="flex flex-col items-center gap-2">
+                  <span className="text-white/60 text-sm font-medium">Scroll to explore</span>
+                  <svg
+                    className="w-5 h-5 text-white/60 animate-bounce"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 lg:mb-8 leading-tight text-balance tracking-tight">
-            Premium Printing & Signage <br className="hidden sm:block" />
-            Solutions for Your Brand
-          </h1>
-          <p className="text-base sm:text-lg lg:text-xl text-slate-200 mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto text-balance leading-relaxed">
-            Industry-leading digital printing, large format signage, DTF apparel branding, and advanced laser/fiber cutting services. Transform your ideas into stunning visual products with cutting-edge technology and expert craftsmanship.
-          </p>
-          
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10 sm:mb-12 lg:mb-14">
-            <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white py-6 sm:py-7 px-8 sm:px-10 text-base sm:text-lg font-semibold transition-all duration-300 hover:shadow-2xl hover:shadow-primary/50 w-full sm:w-auto">
-              Get Started <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white/15 py-6 sm:py-7 px-8 sm:px-10 text-base sm:text-lg font-semibold bg-transparent backdrop-blur-sm transition-all duration-300 hover:border-primary/50 w-full sm:w-auto"
-            >
-              Learn More
-            </Button>
-          </div>
-
-          {/* Carousel Indicators */}
-          <div className="flex gap-3 justify-center">
+          {/* Carousel Indicators - Bottom */}
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
             {heroImages.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentImageIndex(index)}
-                className={`rounded-full transition-all duration-300 cursor-pointer ${
-                  index === currentImageIndex 
-                    ? "bg-gradient-to-r from-primary to-secondary w-8 h-2" 
+                className={`transition-all duration-300 cursor-pointer rounded-full ${
+                  index === currentImageIndex
+                    ? "bg-gradient-to-r from-primary to-secondary w-8 h-2"
                     : "bg-white/40 hover:bg-white/60 w-2 h-2"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
