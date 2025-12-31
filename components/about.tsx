@@ -46,7 +46,7 @@ export default function About() {
           <div className="animate-slideInLeft order-2 lg:order-1">
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground mb-4 sm:mb-6">Our Story</h3>
             <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4 leading-relaxed">
-              Dimension Outlook Ltd is a leading provider of premium printing and signage solutions across East Africa. With over 15 years of industry expertise, we've established ourselves as the trusted partner for businesses seeking exceptional printing quality, innovative designs, and reliable service.
+              Dimension Outlook Ltd is a duly-registered and a leading provider of premium printing and signage solutions across East Africa. With over 15 years of industry expertise, we've established ourselves as the trusted partner for businesses seeking exceptional printing quality, innovative designs, and reliable service.
             </p>
             <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4 leading-relaxed">
               Our state-of-the-art facility houses cutting-edge equipment including digital printers, large format systems, DTF heat press technology, and precision laser/fiber cutting machines. This comprehensive capabilities allow us to deliver versatile solutions for signage, promotional materials, apparel branding, and custom design work.
@@ -59,7 +59,7 @@ export default function About() {
           {/* Company Image */}
           <div className="rounded-xl overflow-hidden shadow-2xl h-64 sm:h-80 lg:h-96 animate-fadeInUp order-1 lg:order-2">
             <img
-              src="/modern-printing-company-office-with-team.jpg"
+              src="/about-us.jpg"
               alt="Dimension Outlook Ltd Office"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             />
@@ -93,7 +93,7 @@ export default function About() {
             </CardHeader>
             <CardContent>
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                To deliver exceptional printing and signage solutions using advanced technology and creative expertise. We empower businesses to communicate their brand message with stunning visual impact, while maintaining the highest standards of quality, reliability, and customer satisfaction.
+                To deliver sustainable valuable designs, prints and online & offline branding services for individuals and businesses.
               </p>
             </CardContent>
           </Card>
@@ -106,7 +106,31 @@ export default function About() {
             </CardHeader>
             <CardContent>
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                To be East Africa's premier printing and signage partner, recognized for innovation, quality excellence, and transformative solutions that elevate brands and drive business success across all industries.
+                The go to place for valuable designs, prints and designing services
+              </p>
+            </CardContent>
+          </Card>
+               <Card className="bg-gradient-to-br from-blue-50 to-white border border-border hover:shadow-xl transition-all duration-300">
+            <CardHeader className="pb-4">
+              <CardTitle className="text-xl sm:text-2xl font-bold text-foreground mb-3 sm:mb-4">
+                Our <span className="text-primary">Focus</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                Customer Service,Quality and Timely delivery
+              </p>
+            </CardContent>
+          </Card>
+               <Card className="bg-gradient-to-br from-blue-50 to-white border border-border hover:shadow-xl transition-all duration-300">
+            <CardHeader className="pb-4">
+              <CardTitle className="text-xl sm:text-2xl font-bold text-foreground mb-3 sm:mb-4">
+                Our <span className="text-primary">Tagline</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                The go to place for valuable designs, prints and designing services
               </p>
             </CardContent>
           </Card>
