@@ -6,15 +6,13 @@ export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const heroImages = [
-    "/professional-printing-press-machinery-digital-sign.jpg",
-    "/professional-printing-equipment-digital-press.jpg",
-    // "/large-format-printing-signage-production.jpg",
-    "/dtf-heat-press-apparel-printing-technology.jpg",
-    // "/cnc-laser-cutting-machine-industrial.jpg",
-    "heroes/heroes-2.jpeg",
     "heroes/heroes-3.jpeg",
     "heroes/heroes-4.jpeg",
     "heroes/heroes-5.jpeg",
+    "/professional-printing-press-machinery-digital-sign.jpg",
+    "/professional-printing-equipment-digital-press.jpg",
+    "/dtf-heat-press-apparel-printing-technology.jpg",
+    "heroes/heroes-2.jpeg",
     "heroes/heroe-6.jpeg",
     "heroes/heroes-7.jpeg",
   ]

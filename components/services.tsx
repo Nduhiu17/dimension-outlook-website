@@ -12,7 +12,7 @@ const services = [
     fullDescription: "Large format printing allows you to print oversized materials for maximum brand visibility. From trade show displays to building wraps, we deliver crisp, vibrant prints on various substrates including vinyl, canvas, and specialty materials.",
     color: "from-blue-500 to-cyan-500",
     images: [
-      "/large-format-printing-signage-production.jpg",
+      // "/large-format-printing-signage-production.jpg",
       "/large-format-billboard-advertising-signage-design.jpg",
       "/professional-printing-press-machinery-digital-sign.jpg",
     ],
