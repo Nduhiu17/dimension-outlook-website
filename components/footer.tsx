@@ -8,9 +8,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-lg font-bold bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text text-transparent mb-4">
-              Dimension Outlook
-            </h3>
+            <div className="mb-4">
+              <img
+                src="/logo.jpeg"
+                alt="Dimension Outlook Logo"
+                className="h-8 sm:h-9 md:h-10 w-auto object-contain"
+              />
+            </div>
             <p className="text-blue-200 text-sm leading-relaxed">
               Premium printing and signage solutions for your business growth.
             </p>

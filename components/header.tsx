@@ -11,9 +11,13 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent hover:opacity-80 transition-opacity cursor-pointer">
-              Dimension Outlook
-            </h1>
+            <a href="#" className="flex items-center hover:opacity-80 transition-opacity duration-200">
+              <img
+                src="/logo.jpeg"
+                alt="Dimension Outlook Logo"
+                className="h-8 sm:h-9 md:h-10 w-auto object-contain"
+              />
+            </a>
           </div>
 
           {/* Desktop Menu */}
