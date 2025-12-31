@@ -8,9 +8,15 @@ export default function Hero() {
   const heroImages = [
     "/professional-printing-press-machinery-digital-sign.jpg",
     "/professional-printing-equipment-digital-press.jpg",
-    "/large-format-printing-signage-production.jpg",
+    // "/large-format-printing-signage-production.jpg",
     "/dtf-heat-press-apparel-printing-technology.jpg",
-    "/cnc-laser-cutting-machine-industrial.jpg",
+    // "/cnc-laser-cutting-machine-industrial.jpg",
+    "heroes/heroes-2.jpeg",
+    "heroes/heroes-3.jpeg",
+    "heroes/heroes-4.jpeg",
+    "heroes/heroes-5.jpeg",
+    "heroes/heroe-6.jpeg",
+    "heroes/heroes-7.jpeg",
   ]
 
   useEffect(() => {
@@ -54,7 +60,7 @@ export default function Hero() {
             {/* Subtitle Badge */}
             <div className="inline-flex items-center justify-center">
               <div className="px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:border-white/40 transition-all duration-300">
-                <span className="text-sm sm:text-base font-semibold text-white/90">✨ Premium Printing Solutions</span>
+                <span className="text-sm sm:text-base font-semibold text-white/90">✨ Design | Print | Brand</span>
               </div>
             </div>
 
