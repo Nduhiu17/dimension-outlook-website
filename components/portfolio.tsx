@@ -17,7 +17,7 @@ const portfolioItems = [
     id: 3,
     title: "Digital Print Campaign",
     category: "Digital Printing",
-    image: "/professional-digital-printing-marketing-materials-.jpg",
+   image: "/retail-store-signage-branding-installation-modern-.jpg",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const portfolioItems = [
     id: 6,
     title: "Large Format Production",
     category: "Large Formats",
-    image: "/large-format-printing-production-quality-output.jpg",
+     image: "/retail-store-signage-branding-installation-modern-.jpg",
   },
 ]
 

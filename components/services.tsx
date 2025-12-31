@@ -12,9 +12,10 @@ const services = [
     fullDescription: "Large format printing allows you to print oversized materials for maximum brand visibility. From trade show displays to building wraps, we deliver crisp, vibrant prints on various substrates including vinyl, canvas, and specialty materials.",
     color: "from-blue-500 to-cyan-500",
     images: [
-      // "/large-format-printing-signage-production.jpg",
-      "/large-format-billboard-advertising-signage-design.jpg",
-      "/professional-printing-press-machinery-digital-sign.jpg",
+      "services/large-format-printing/large-format-printing-1.jpeg",
+      "services/large-format-printing/large-format-printing-2.jpeg",
+      "services/large-format-printing/large-format-printing-3.jpeg",
+      "services/large-format-printing/large-format-printing-4.jpeg",
     ],
   },
   {
@@ -25,7 +26,6 @@ const services = [
     fullDescription: "Our digital printing services handle everything from business cards to promotional materials. With advanced color management and multiple substrate options including specialty papers and textured finishes, we ensure every project stands out.",
     color: "from-purple-500 to-pink-500",
     images: [
-      "/professional-printing-equipment-digital-press.jpg",
       "/professional-digital-printing-marketing-materials-.jpg",
       "/professional-printing-press-machinery-digital-sign.jpg",
     ],
@@ -37,9 +37,11 @@ const services = [
     fullDescription: "DTF (Direct-to-Film) technology provides superior color vibrancy and durability for apparel printing. Perfect for custom branded merchandise, promotional items, and fashion designs with minimal setup costs and exceptional quality on light and dark fabrics.",
     color: "from-orange-500 to-red-500",
     images: [
-      "/dtf-heat-press-apparel-printing-technology.jpg",
-      "/custom-apparel-t-shirt-printing-dtf-heat-transfer.jpg",
-      "/professional-printing-press-machinery-digital-sign.jpg",
+      "apparel-printing/apparel-printing-1.jpeg",
+      "apparel-printing/appare-printing-2.jpeg",
+      "apparel-printing/apparel-printing-3.jpeg",
+      "apparel-printing/apparel-printing-4.jpeg",
+      "apparel-printing/apparel-printing-5.jpeg"
     ],
   },
   {
