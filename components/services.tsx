@@ -26,8 +26,10 @@ const services = [
     fullDescription: "Our digital printing services handle everything from business cards to promotional materials. With advanced color management and multiple substrate options including specialty papers and textured finishes, we ensure every project stands out.",
     color: "from-purple-500 to-pink-500",
     images: [
-      "/professional-digital-printing-marketing-materials-.jpg",
-      "/professional-printing-press-machinery-digital-sign.jpg",
+      "services/digital-printing/digital-printing-1.jpeg",
+      "services/digital-printing/digital-printing-2.jpeg",
+      "services/digital-printing/digital-printing-3.jpeg",
+      "services/digital-printing/digital-printing-4.jpeg",
     ],
   },
   {
@@ -37,11 +39,11 @@ const services = [
     fullDescription: "DTF (Direct-to-Film) technology provides superior color vibrancy and durability for apparel printing. Perfect for custom branded merchandise, promotional items, and fashion designs with minimal setup costs and exceptional quality on light and dark fabrics.",
     color: "from-orange-500 to-red-500",
     images: [
-      "apparel-printing/apparel-printing-1.jpeg",
-      "apparel-printing/appare-printing-2.jpeg",
-      "apparel-printing/apparel-printing-3.jpeg",
-      "apparel-printing/apparel-printing-4.jpeg",
-      "apparel-printing/apparel-printing-5.jpeg"
+      "services/apparel-printing/apparel-printing-1.jpeg",
+      "services/apparel-printing/apparel-printing-2.jpeg",
+      "services/apparel-printing/apparel-printing-3.jpeg",
+      "services/apparel-printing/apparel-printing-4.jpeg",
+      "services/apparel-printing/apparel-printing-5.jpeg"
     ],
   },
   {
@@ -51,6 +53,8 @@ const services = [
     fullDescription: "Our laser and fiber cutting services deliver precision work for custom signage, awards, decorative items, and more. From intricate engravings to clean cuts on various materials, we combine precision technology with expert craftsmanship for professional results.",
     color: "from-green-500 to-emerald-500",
     images: [
+      "services/laser-fiber-cutting/laser-cutting-1.jpeg",
+      "services/laser-fiber-cutting/laser-cutting-3.jpeg",
       "/cnc-laser-cutting-machine-industrial.jpg",
       "/modern-office-workspace-cnc-laser-cutting-equipment.jpg",
       "/cnc-laser-cutting-engraving-precision-work-materia.jpg",
@@ -85,7 +89,7 @@ function ServiceCard({ service }) {
       <div className={`h-1 bg-gradient-to-r ${service.color}`}></div>
 
       {/* Image Carousel Section */}
-      <div className="relative w-full h-48 sm:h-56 overflow-hidden bg-slate-100">
+      <div className="relative w-full h-64 sm:h-72 md:h-80 overflow-hidden bg-slate-100">
         {service.images.map((image, index) => (
           <div
             key={index}
