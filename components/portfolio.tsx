@@ -5,7 +5,7 @@ const portfolioItems = [
     id: 1,
     title: "Large Format Billboard Design",
     category: "Signage",
-    image: "portfolio/portfolio-1.jpeg",
+    image: "portfolio/portifolio-1.jpeg",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const portfolioItems = [
     id: 3,
     title: "Digital Print Campaign",
     category: "Digital Printing",
-   image:  "portfolio/portfolio-3.jpeg",
+   image:  "portfolio/portfolio-10.jpeg",
   },
   {
     id: 4,
