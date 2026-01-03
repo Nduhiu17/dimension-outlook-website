@@ -5,7 +5,7 @@ export default function About() {
   const stats = [
     {
       icon: <Users className="w-8 h-8" />,
-      number: "100+",
+      number: "1000+",
       label: "Happy Clients",
     },
     {

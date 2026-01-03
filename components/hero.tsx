@@ -11,7 +11,7 @@ export default function Hero() {
     "heroes/heroes-5.jpeg",
     "/dtf-heat-press-apparel-printing-technology.jpg",
     "heroes/heroes-2.jpeg",
-    "heroes/heroe-6.jpeg",
+    // "heroes/heroe-6.jpeg",
     "heroes/heroes-7.jpeg",
   ]
 
