@@ -1,7 +1,19 @@
+"use client"
+
 import { Users, Target, Award, TrendingUp } from "lucide-react"
+import { useEffect, useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function About() {
+  const [imageLoaded, setImageLoaded] = useState(false)
+
+  // Preload about image
+  useEffect(() => {
+    const img = new Image()
+    img.onload = () => setImageLoaded(true)
+    img.src = "/about-us.jpg"
+  }, [])
+
   const stats = [
     {
       icon: <Users className="w-8 h-8" />,
@@ -61,7 +73,9 @@ export default function About() {
             <img
               src="/about-us.jpg"
               alt="Dimension Outlook Ltd Office"
-              className="w-full h-full object-cover hover:scale-110 transition-transform duration-700 group-hover:brightness-110"
+              className={`w-full h-full object-cover hover:scale-110 transition-transform duration-700 group-hover:brightness-110 ${
+                imageLoaded ? "opacity-100" : "opacity-50"
+              } transition-opacity duration-300`}
             />
           </div>
         </div>

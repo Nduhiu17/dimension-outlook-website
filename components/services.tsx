@@ -64,6 +64,30 @@ const services = [
 
 function ServiceCard({ service }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [imagesLoaded, setImagesLoaded] = useState<boolean[]>([])
+
+  // Preload first image immediately, others on demand
+  useEffect(() => {
+    const loadedState = new Array(service.images.length).fill(false)
+    loadedState[0] = true
+
+    // Preload first image
+    const firstImg = new Image()
+    firstImg.src = service.images[0]
+
+    // Lazy load other images
+    service.images.forEach((image, index) => {
+      if (index === 0) return
+      const img = new Image()
+      img.onload = () => {
+        loadedState[index] = true
+        setImagesLoaded([...loadedState])
+      }
+      img.src = image
+    })
+
+    setImagesLoaded(loadedState)
+  }, [service.images])
 
   useEffect(() => {
     const interval = setInterval(() => {

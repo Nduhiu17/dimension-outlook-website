@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [imagesLoaded, setImagesLoaded] = useState<boolean[]>([])
 
   const heroImages = [
     "heroes/heroes-3.jpeg",
@@ -11,9 +12,24 @@ export default function Hero() {
     "heroes/heroes-5.jpeg",
     "/dtf-heat-press-apparel-printing-technology.jpg",
     "heroes/heroes-2.jpeg",
-    // "heroes/heroe-6.jpeg",
     "heroes/heroes-7.jpeg",
   ]
+
+  // Preload images on mount
+  useEffect(() => {
+    const loadedState = new Array(heroImages.length).fill(false)
+    loadedState[0] = true
+
+    heroImages.forEach((image, index) => {
+      if (index === 0) return
+      const img = new Image()
+      img.onload = () => {
+        loadedState[index] = true
+        setImagesLoaded([...loadedState])
+      }
+      img.src = image
+    })
+  }, [])
 
   useEffect(() => {
     const interval = setInterval(() => {
