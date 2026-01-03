@@ -81,20 +81,20 @@ function ServiceCard({ service }) {
   }
 
   return (
-    <Card className="group relative bg-white border border-slate-200 hover:border-transparent hover:shadow-2xl transition-all duration-500 overflow-hidden h-full flex flex-col">
+    <Card className="group relative bg-white border border-slate-200 hover:border-transparent hover:shadow-2xl transition-all duration-500 overflow-hidden h-full flex flex-col animate-fadeInUp">
       {/* Gradient Background on Hover */}
       <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
 
-      {/* Top Accent Bar */}
-      <div className={`h-1 bg-gradient-to-r ${service.color}`}></div>
+      {/* Top Accent Bar with Animation */}
+      <div className={`h-1 bg-gradient-to-r ${service.color} group-hover:h-2 transition-all duration-300`}></div>
 
       {/* Image Carousel Section */}
-      <div className="relative w-full h-64 sm:h-72 md:h-80 overflow-hidden bg-slate-100">
+      <div className="relative w-full h-64 sm:h-72 md:h-80 overflow-hidden bg-slate-100 group-hover:opacity-95 transition-opacity duration-300">
         {service.images.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
-              index === currentImageIndex ? "opacity-100" : "opacity-0"
+            className={`absolute inset-0 transition-all duration-500 ease-in-out ${
+              index === currentImageIndex ? "opacity-100 scale-100" : "opacity-0 scale-110"
             }`}
           >
             <img
@@ -106,12 +106,12 @@ function ServiceCard({ service }) {
         ))}
 
         {/* Overlay Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
         {/* Navigation Buttons */}
         <button
           onClick={prevImage}
-          className="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white rounded-full p-1.5 transition-all duration-300 opacity-0 group-hover:opacity-100"
+          className="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white rounded-full p-1.5 transition-all duration-300 opacity-0 group-hover:opacity-100 hover:scale-110"
           aria-label="Previous image"
         >
           <ChevronLeft className="w-4 h-4 text-slate-900" />
@@ -119,7 +119,7 @@ function ServiceCard({ service }) {
 
         <button
           onClick={nextImage}
-          className="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white rounded-full p-1.5 transition-all duration-300 opacity-0 group-hover:opacity-100"
+          className="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white rounded-full p-1.5 transition-all duration-300 opacity-0 group-hover:opacity-100 hover:scale-110"
           aria-label="Next image"
         >
           <ChevronRight className="w-4 h-4 text-slate-900" />
@@ -131,8 +131,8 @@ function ServiceCard({ service }) {
             <button
               key={index}
               onClick={() => setCurrentImageIndex(index)}
-              className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
-                index === currentImageIndex ? "bg-white w-4" : "bg-white/50 hover:bg-white/75"
+              className={`rounded-full transition-all duration-300 ${
+                index === currentImageIndex ? "bg-white w-4 h-1.5 scale-110" : "bg-white/50 hover:bg-white/75 w-1.5 h-1.5"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
@@ -142,7 +142,7 @@ function ServiceCard({ service }) {
 
       {/* Content Section */}
       <CardHeader className="pb-3 sm:pb-4 relative z-10">
-        <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br ${service.color} p-3 text-white mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300`}>
+        <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br ${service.color} p-3 text-white mb-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300`}>
           {service.icon}
         </div>
         <CardTitle className="text-lg sm:text-xl font-bold text-foreground group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-secondary group-hover:bg-clip-text transition-all duration-300">
@@ -150,7 +150,7 @@ function ServiceCard({ service }) {
         </CardTitle>
       </CardHeader>
       <CardContent className="relative z-10 flex-grow">
-        <CardDescription className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+        <CardDescription className="text-sm sm:text-base text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
           {service.description}
         </CardDescription>
       </CardContent>
@@ -184,7 +184,9 @@ export default function Services() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {services.map((service, index) => (
-            <ServiceCard key={index} service={service} />
+            <div key={index} style={{ animationDelay: `${index * 100}ms` }}>
+              <ServiceCard service={service} />
+            </div>
           ))}
         </div>
       </div>
