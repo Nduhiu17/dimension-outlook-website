@@ -3,7 +3,7 @@
 import { MessageCircle } from "lucide-react"
 
 export default function WhatsAppFloat() {
-  const phoneNumber = "+254722117264"
+  const phoneNumber = "+254717388209"
   const message = "Hello! I'm interested in learning more about your printing and signage services."
 
   const handleWhatsAppClick = () => {

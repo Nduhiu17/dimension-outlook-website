@@ -27,7 +27,28 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
+    
+    // Format the message for WhatsApp
+    const formattedMessage = `
+📋 *New Contact Form Submission*
+
+👤 *Name:* ${formData.firstName} ${formData.lastName}
+📧 *Email:* ${formData.email}
+📱 *Phone:* ${formData.phone || "Not provided"}
+🏢 *Company:* ${formData.company || "Not provided"}
+
+💬 *Message:*
+${formData.message}
+    `.trim()
+
+    // Encode message for WhatsApp URL
+    const encodedMessage = encodeURIComponent(formattedMessage)
+    const phoneNumber = "254717388209"
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+
+    // Open WhatsApp in new tab
+    window.open(whatsappUrl, "_blank")
+
     // Reset form
     setFormData({
       firstName: "",
@@ -37,7 +58,9 @@ export default function ContactForm() {
       company: "",
       message: "",
     })
-    alert("Thank you for your message! We will be in touch soon.")
+    
+    // Show success message
+    alert("Thank you! Your message is being sent to WhatsApp. Please complete the send process.")
   }
 
   return (
@@ -146,7 +169,7 @@ export default function ContactForm() {
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
           <div className="text-center">
             <h3 className="font-semibold text-foreground mb-2">Phone</h3>
-            <p className="text-primary">+254 7XX XXX XXX</p>
+            <p className="text-primary">+254 717 388 209</p>
           </div>
           <div className="text-center">
             <h3 className="font-semibold text-foreground mb-2">Email</h3>

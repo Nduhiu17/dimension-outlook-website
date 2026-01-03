@@ -5,37 +5,37 @@ const portfolioItems = [
     id: 1,
     title: "Large Format Billboard Design",
     category: "Signage",
-    image: "/large-format-billboard-advertising-signage-design.jpg",
+    image: "portfolio/portfolio-1.jpeg",
   },
   {
     id: 2,
     title: "Custom Apparel Printing",
     category: "DTF Printing",
-    image: "/custom-apparel-t-shirt-printing-dtf-heat-transfer.jpg",
+    image:  "portfolio/portfolio-2.jpeg",
   },
   {
     id: 3,
     title: "Digital Print Campaign",
     category: "Digital Printing",
-   image: "/retail-store-signage-branding-installation-modern-.jpg",
+   image:  "portfolio/portfolio-3.jpeg",
   },
   {
     id: 4,
     title: "Precision Laser Cutting",
     category: "Laser Services",
-    image: "/cnc-laser-cutting-engraving-precision-work-materia.jpg",
+    image:  "portfolio/portfolio-4.jpeg",
   },
   {
     id: 5,
     title: "Retail Signage Installation",
     category: "Signage",
-    image: "/retail-store-signage-branding-installation-modern-.jpg",
+    image:  "portfolio/portfolio-5.jpeg",
   },
   {
     id: 6,
     title: "Large Format Production",
     category: "Large Formats",
-     image: "/retail-store-signage-branding-installation-modern-.jpg",
+     image:  "portfolio/portfolio-6.jpeg",
   },
 ]
 

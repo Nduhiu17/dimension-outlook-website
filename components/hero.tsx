@@ -9,7 +9,6 @@ export default function Hero() {
     "heroes/heroes-3.jpeg",
     "heroes/heroes-4.jpeg",
     "heroes/heroes-5.jpeg",
-    "/professional-printing-press-machinery-digital-sign.jpg",
     "/dtf-heat-press-apparel-printing-technology.jpg",
     "heroes/heroes-2.jpeg",
     "heroes/heroe-6.jpeg",
