@@ -56,13 +56,22 @@ export default function Hero() {
             {/* Subtitle Badge */}
             <div className="inline-flex items-center justify-center">
               <div className="px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:border-white/40 transition-all duration-300">
-                <span className="text-sm sm:text-base font-semibold text-white/90">✨ Design | Print | Brand</span>
+                <span className="text-sm sm:text-base font-semibold text-white/90 flex gap-2 items-center">
+                  <span className="animate-slideInLeft">✨ Design</span>
+                  <span className="animate-slideInDown" style={{ animationDelay: "150ms" }}>|</span>
+                  <span className="animate-slideInRight" style={{ animationDelay: "300ms" }}>Print</span>
+                  <span className="animate-slideInDown" style={{ animationDelay: "450ms" }}>|</span>
+                  <span className="animate-slideInUp" style={{ animationDelay: "600ms" }}>Brand</span>
+                </span>
               </div>
             </div>
 
             {/* Main Heading */}
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight text-balance tracking-tight">
-              Bring Your Vision to Life
+              <span className="inline-block animate-slideInLeft">Bring</span>
+              <span className="inline-block mx-2 animate-fadeInUp" style={{ animationDelay: "100ms" }}>Your</span>
+              <span className="inline-block animate-slideInRight">Vision</span>
+              <span className="block animate-fadeInUp" style={{ animationDelay: "200ms" }}>to Life</span>
             </h1>
 
             {/* Decorative Line */}
