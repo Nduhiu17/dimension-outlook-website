@@ -65,7 +65,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors duration-200">
+                <a href="/privacy-policy" className="hover:text-white transition-colors duration-200">
                   Privacy Policy
                 </a>
               </li>
@@ -95,7 +95,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row justify-between items-center text-blue-200 text-sm">
             <p>&copy; {currentYear} Dimension Outlook Ltd. All rights reserved.</p>
             <div className="flex gap-6 mt-4 sm:mt-0">
-              <a href="#" className="hover:text-white transition-colors duration-200">
+              <a href="/privacy-policy" className="hover:text-white transition-colors duration-200">
                 Privacy
               </a>
               <a href="#" className="hover:text-white transition-colors duration-200">
